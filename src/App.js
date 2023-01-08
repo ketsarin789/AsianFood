@@ -13,8 +13,10 @@ import {SoupPage} from '../src/page/SoupPage'
 import {WokPage} from '../src/page/WokPage'
 import {ShopPage} from '../src/page/ShopPage'
 import Footer from './components/Footer';
-//import {PopularDetail} from './page/PopularDetail'
-import PopularDetailPage from './page/PopularDetailPage';
+import {FriedRicePage} from '../src/page/FriedRicePage';
+import PopularDetailPage from '../src/page/PopularDetailPage'
+
+import FriedRiceDetailPage from '../src/page/FriedRiceDetailPage';
 
 
 
@@ -29,7 +31,9 @@ function App() {
           {/* <Route path="/header" element={<Header />}/>   */}
 
           <Route path="/" element={<Home/>}/> 
-          <Route path="/home/:popularId" element={<PopularDetailPage/>}/> 
+          <Route path="/:popularId" element={<PopularDetailPage/>}/> 
+           <Route path="friedrice" element={<FriedRicePage />}/>  
+           <Route path="friedrice/:friedriceId" element={<FriedRiceDetailPage />}/> 
 
          <Route path="/about" element={<About />}/>
          <Route path="/appetizers" element={<AppetizersPage />}/>

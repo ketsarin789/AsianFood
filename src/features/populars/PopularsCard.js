@@ -8,7 +8,7 @@ const PopularCard = ({popular}) => {
    const {id,image, name, description} = popular;
     return(
         //add Link if not work delete Link
-        <Link to='/home/:popularId'> 
+        <Link to={`/${id}`}> 
             <Card>
                 <CardImg src={image} alt={name}/>
                 <CardBody>
@@ -17,15 +17,7 @@ const PopularCard = ({popular}) => {
                 </CardBody>
             </Card>
         </Link>
-            // <Card>
-            //     <CardImg width="100%"
-            //         src={image}
-            //         alt={name}
-            //     />
-            //     <CardImgOverlay>
-            //         <CardTitle>{name}</CardTitle>
-            //     </CardImgOverlay>
-            // </Card>
+           
         
     )
 };

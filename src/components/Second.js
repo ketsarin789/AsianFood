@@ -32,7 +32,7 @@ const Second = () => {
                     
                     <NavItem>
                         <NavLink className='nav-link' to='/friedrice'>
-                            Friend Rice
+                            Fried Rice
                         </NavLink>
                     </NavItem>
                     
