@@ -89,3 +89,18 @@ h2 {
   margin-left: 200px;
   margin-top: 10px;
 }
+.row {
+  background-color: #f7f8fc;
+}
+
+  .cartCard {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    margin-bottom: 20px;
+    padding: 14px;
+    border-radius: 5px;
+}
+
+

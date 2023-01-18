@@ -8,7 +8,7 @@ import {Card, CardImg,CardBody,CardTitle, CardText} from 'reactstrap';
 const FriedRiceCard = ({friedrice}) => {
     const {id,image,name,description} = friedrice;
     return (
-        <Link to={`/${id}`}> 
+        <Link to={`${id}`}> 
            <Card>
                 <CardImg src={image} alt={name}/>
                 <CardBody>

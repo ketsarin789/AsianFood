@@ -1,4 +1,4 @@
-import { FRIEDRICE } from '../../shared/FRIEDRICE'
+import { FRIEDRICE } from '../../data'
 
 export const selectAllFriedRice = () => {
     return FRIEDRICE;

@@ -10,7 +10,7 @@ export const FriedRiceList = () => {
         <Row>
              {friedrices.map((friedrice) => {
                 return(
-                    <Col md="3" className='m-4' 
+                    <Col md="4" className='m-4'  style={{padding: "30px"}}
                     key={friedrice.id}>
                    
                          <FriedRiceCard friedrice={friedrice} /> 

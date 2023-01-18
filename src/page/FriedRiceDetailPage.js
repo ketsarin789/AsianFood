@@ -5,6 +5,10 @@ import FriedRiceDetail from '../features/friedrices/FriedRiceDetail';
 
 import React from 'react'
 
+// const FriedRiceDetailPage = () => {
+//     const [friedriceId, setFriedRiceId] = useState(0)
+// }
+
 const FriedRiceDetailPage = () => {
 
     const {friedriceId} = useParams();
