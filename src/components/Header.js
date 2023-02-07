@@ -13,7 +13,9 @@ const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     const [show, setShow] = useState(false);
    
-    const handleShow = () => setShow(false)
+    const handleShow = () => {
+        setShow(false)
+    }
 
     const productsCount = cart.items.reduce((sum, product) => sum + product.quantity, 0) //use for get total of product
     return (
@@ -34,7 +36,8 @@ const Header = () => {
             </Navbar>
             <Modal isOpen={!show}>
                    {/* this one will made X button in header close */}
-                    <ModalHeader toggle={() => setShow(true)}> 
+                    <ModalHeader toggle={() => setShow(true)}>  
+                   
                        Shopping Cart
                    </ModalHeader>
                     <ModalBody>

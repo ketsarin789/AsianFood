@@ -10,7 +10,7 @@ export const SoupsList = () => {
         <Row>
             {soups.map((soup) => {
                 return(
-                    <Col md="5" className='m-4'>
+                    <Col md="5" className='m-4' key={soup.id}>
                         <SoupCard soup={soup}/>
                     </Col>
                 )
@@ -18,5 +18,6 @@ export const SoupsList = () => {
         </Row>
     )
 }
+
 
 
